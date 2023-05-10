@@ -1,6 +1,9 @@
 <template>
   <div class="app">
     <header>
+      <div class="title">
+        <h1>Nancy's Jobs</h1>
+      </div>
       <div class="order">
         <button @click="handleClick('title')">order by title</button>
         <button @click="handleClick('salary')">order by salary</button>
@@ -8,8 +11,8 @@
       </div>
     </header>
     <!-- JobList is the component, jobs is the prop that was defined in JobList.vue as 
-    a required PropType.'jobs' comes from the Job interface from the Job.ts file
-    the : are placed before each prop  -->
+    a required PropType.'jobs' comes from the Job interface from the Job.ts file.
+    the : is placed before each prop  -->
     <JobList :jobs="jobs" :order="order"/>
   </div>
 </template>
